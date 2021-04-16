@@ -4,10 +4,12 @@
 db/
 php/
 
-# wirdpress ファイル除外
+# wordpress ファイル除外
 wordpress/html/wp-admin/
 wordpress/html/wp-includes/
 wordpress/html/*.*
+
+# wordpress wp-content直下
 wordpress/html/wp-content/*.php
 wordpress/html/wp-content/languages/
 wordpress/html/wp-content/plugins/
