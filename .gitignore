@@ -1,0 +1,19 @@
+# "#" で始まる行はコメント
+
+# docker php除外
+db/
+php/
+
+# wirdpress ファイル除外
+wordpress/html/wp-admin/
+wordpress/html/wp-includes/
+wordpress/html/*.*
+wordpress/html/wp-content/*.php
+wordpress/html/wp-content/languages/
+wordpress/html/wp-content/plugins/
+wordpress/html/wp-content/upgrade/
+wordpress/html/wp-content/uploads/
+
+# 自作テーマ以外の修正は受け付けない
+wordpress/html/wp-content/themes/twenty*/
+
