@@ -4,6 +4,8 @@
 db/
 php/
 
+docker-compose.yml
+
 # wordpress ファイル除外
 wordpress/html/wp-admin/
 wordpress/html/wp-includes/
@@ -18,4 +20,5 @@ wordpress/html/wp-content/uploads/
 
 # 自作テーマ以外の修正は受け付けない
 wordpress/html/wp-content/themes/twenty*/
+
 
