@@ -10,7 +10,8 @@
  * @since TcustomNao 1.0
  */
 
-
+// アイキャッチ画像を有効にする。
+add_theme_support( 'post-thumbnails' );
 
 //カスタムメニュー
 function twpp_setup_theme(){

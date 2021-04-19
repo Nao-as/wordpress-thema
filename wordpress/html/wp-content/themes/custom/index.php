@@ -18,7 +18,20 @@
 <?php get_header(); ?>
 <div class="container">
     <div class="contents">
-    ここに表示させたいメインコンテンツを記述
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <!--ここに記事一覧に表示したいコンテンツを記述-->
+                <?php get_template_part('/template/loop-content'); ?>
+        <?php endwhile; endif; ?>
+        <!--ループ終了-->
+        <div class="pagination">
+            <?php echo paginate_links(array(
+                'type' => 'list',
+                'mid_size' => '1',
+                'prev_text' => '<i class="fa fa-chevron-left"></i>',
+                'next_text' => '<i class="fa fa-chevron-right"></i>'
+            )); ?>
+        </div>
+
     </div>
     <!--end contents-->
     <?php get_sidebar(); ?>

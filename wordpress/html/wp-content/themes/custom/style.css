@@ -384,6 +384,129 @@
   text-align: right;
 }
 
+/* 記事一覧 */
+.article-list {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+ 
+.article-list:hover {
+  background-color: #eee;
+}
+ 
+.article-list a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+ 
+.article-list a:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+ 
+.article-list .img-wrap {
+  position: relative;
+  float: left;
+  line-height: 1;
+}
+ 
+.article-list .img-wrap img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+}
+ 
+.article-list .img-wrap .cat-data {
+  font-size: .75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .3rem .5rem;
+  color: #fff;
+  background-color: #03162f;
+}
+ 
+.article-list .text {
+  margin-left: 260px;
+}
+ 
+.article-list .text h2 {
+  font-size: 1.15rem;
+  margin-bottom: .5rem;
+}
+ 
+.article-list .text .article-date,
+.article-list .text .article-author {
+  font-size: .75rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: #888;
+}
+ 
+.article-list .text .article-date {
+  margin-right: .5rem;
+}
+ 
+.article-list .text .article-author i {
+  margin-right: .3rem;
+}
+ 
+.article-list .text p {
+  font-size: .8125rem;
+  line-height: 1.7;
+}
+
+/* ページネーション CSS */
+	
+.pagination {
+  margin: 2rem 0;
+  text-align: center;
+}
+ 
+.pagination ul {
+  font-size: 0;
+}
+ 
+.pagination ul li {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: .5rem;
+}
+ 
+.pagination ul li:last-child {
+  border: 0;
+}
+ 
+.pagination ul li a,
+.pagination .current {
+  display: block;
+  padding: .5rem .8rem;
+  border: 1px solid #ccc;
+}
+ 
+.pagination ul li .prev,
+.pagination ul li .next {
+  border: 0;
+}
+ 
+.pagination ul li a {
+  text-decoration: none;
+  color: #333;
+}
+ 
+.pagination ul li a:hover {
+  opacity: .6;
+}
+ 
+.pagination .current {
+  color: #fff;
+  background-color: #03162f;
+}
+
 /***************  max 800px ipad  ***************/
 
 @media(max-width: 800px) {
@@ -510,6 +633,42 @@
  
   .header-nav li a:after {
     right: .8rem;
+  }
+  .article-list {
+    padding: .5rem;
+  }
+ 
+  .article-list .img-wrap img {
+    width: 132px;
+    height: 88px;
+  }
+ 
+  .article-list .img-wrap .cat-data {
+    font-size: .6rem;
+  }
+ 
+  .article-list .text {
+    margin-left: 140px;
+    padding: 0;
+  }
+ 
+  .article-list .text h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+ 
+  .article-list .text p {
+    display: none;
+  }
+ 
+  .article-list .text .article-date,
+  .article-list .text .article-author {
+    font-size: .625rem;
+    margin-bottom: 0;
+  }
+ 
+  .article-list .text .article-date {
+    margin-right: .2rem;
   }
 
 }
