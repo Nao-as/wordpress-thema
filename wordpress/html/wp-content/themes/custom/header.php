@@ -25,9 +25,9 @@ if (is_home() || is_front_page()) {
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>" />
-    <title>カスタマイズ</title>
+<head prefix="og: http://ogp.me/ns#">
+    <!-- SEO関連 -->
+    <?php get_template_part('/template/seo-head'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@ if (is_home() || is_front_page()) {
                 </a>
                 <?php echo $title_tag_end; ?>
             </div> -->
-
+            
             <!--タイトルを文字にする場合-->
             <div class="site-title-wrap">
                 <?php echo $title_tag_start; ?>
@@ -64,7 +64,7 @@ if (is_home() || is_front_page()) {
 
             <!--スマホ用メニューボタン-->
             <button type="button" id="navbutton" class="navbutton">
-                <i class="fas fa-bars"></i>
+                <i class="fa fa-navicon"></i>
             </button>
 
             <!--ヘッダーメニュー-->
