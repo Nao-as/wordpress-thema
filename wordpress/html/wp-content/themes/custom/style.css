@@ -460,8 +460,7 @@
   line-height: 1.7;
 }
 
-/* ページネーション CSS */
-	
+/* 記事一覧 ページネーション CSS */
 .pagination {
   margin: 2rem 0;
   text-align: center;
@@ -505,6 +504,154 @@
 .pagination .current {
   color: #fff;
   background-color: #03162f;
+}
+
+/**************** 投稿記事 *****************/
+.article-content {
+  margin-bottom: 2rem;
+}
+ 
+.article-content .article-info {
+  margin-bottom: .5rem;
+}
+ 
+.article-content .cat-data a {
+  font-size: .8rem;
+  margin-right: .5rem;
+  padding: .1rem .5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #03162f;
+}
+ 
+.article-content .article-info .article-date,
+.article-content .article-info .article-author {
+  font-size: .8rem;
+  display: inline-block;
+  margin-right: .5rem;
+  color: #888;
+}
+ 
+.article-content .article-info .article-author i {
+  margin-right: .3rem;
+}
+ 
+.article-content p,
+.article-content b,
+.article-content table,
+.article-content ul,
+.article-content ol {
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+ 
+.article-content p,
+.article-content img,
+.article-content table,
+.article-content ul,
+.article-content ol {
+  margin-bottom: 2rem;
+}
+ 
+.article-content h1 {
+  font-size: 1.9rem;
+  margin: 0 0 2rem;
+  letter-spacing: 1px;
+}
+ 
+.article-content h2 {
+  font-size: 1.7rem;
+  margin: 3rem 0 2rem;
+  padding: .4rem 0;
+  letter-spacing: 1px;
+  border-bottom: solid 5px #03162f;
+}
+ 
+.article-content h3 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1.8rem;
+  padding: 0 1rem;
+  letter-spacing: 1px;
+  border-left: solid 7px #415671;
+  background: transparent;
+}
+ 
+.article-content h4 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+  letter-spacing: 1px;
+}
+ 
+.article-content h5 {
+  font-size: 1.1rem;
+  margin: 0 0 .3rem;
+  letter-spacing: 1px;
+}
+ 
+.article-content .article-img {
+  margin-bottom: 2rem;
+}
+ 
+.article-content .article-img img {
+  display: block;
+  margin: 0 auto;
+}
+ 
+.article-content ul {
+  margin-left: 2rem;
+  list-style: disc;
+}
+ 
+.article-content ol {
+  margin-left: 2rem;
+  list-style: decimal;
+}
+ 
+.article-content table {
+  border-collapse: collapse;
+}
+ 
+.article-content th,
+.article-content td {
+  padding: .6rem;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+ 
+.article-content figure {
+  max-width: 100%;
+}
+ 
+.article-tag {
+  text-align: right;
+}
+ 
+.article-tag ul {
+  font-size: 0;
+  margin-bottom: 0;
+}
+ 
+.article-tag ul li {
+  font-size: .9rem;
+  display: inline-block;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+ 
+.article-tag ul li:last-child {
+  margin-right: 0;
+}
+ 
+.article-tag ul li a {
+  padding: .2rem .5rem;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+}
+ 
+.article-tag ul li a:hover {
+  opacity: .6;
 }
 
 /***************  max 800px ipad  ***************/
@@ -666,9 +813,20 @@
     font-size: .625rem;
     margin-bottom: 0;
   }
- 
   .article-list .text .article-date {
     margin-right: .2rem;
+  }
+  .article-content h1 {
+    font-size: 1.6rem;
+  }
+  .article-content h2 {
+    font-size: 1.4rem;
+  }
+  .article-content h3 {
+    font-size: 1.3rem;
+  }
+  .article-content h4 {
+    font-size: 1.2rem;
   }
 
 }
