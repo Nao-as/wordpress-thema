@@ -43,7 +43,6 @@ if (is_home() || is_front_page()) {
 
     <header>
         <div class="header-inner">
-
             <!--タイトルを画像にする場合-->
             <!-- <div class="site-title-wrap">
                 <?php echo $title_tag_start; ?>
@@ -52,7 +51,7 @@ if (is_home() || is_front_page()) {
                 </a>
                 <?php echo $title_tag_end; ?>
             </div> -->
-            
+
             <!--タイトルを文字にする場合-->
             <div class="site-title-wrap">
                 <?php echo $title_tag_start; ?>

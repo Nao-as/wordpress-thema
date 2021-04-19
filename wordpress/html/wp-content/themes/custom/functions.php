@@ -29,6 +29,25 @@ function navbutton_scripts(){
 }
 add_action('wp_enqueue_scripts', 'navbutton_scripts');
 
+//見出しと段落のカスタム行の高さを追加
+add_theme_support( 'custom-line-height' );
+
+
+//カスタム背景設定追加
+$defaults = array(
+     'default-image' => '',
+     'default-preset' => 'default',
+     'default-position-x' => 'left',
+     'default-position-y' => 'top',
+     'default-size' => 'auto',
+     'default-repeat' => 'repeat',
+     'default-attachment' => 'scroll',
+     'default-color' => '',
+     'wp-head-callback' => '_custom_background_cb',
+     'admin-head-callback' => '',
+     'admin-preview-callback' => '',
+ );
+ add_theme_support( 'custom-background', $defaults );
 
 
 /* ---------------------------------------

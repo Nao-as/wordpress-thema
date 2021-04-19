@@ -31,17 +31,21 @@
   margin-right: 3%;
   box-shadow: 0 0 15px #ddd;
   padding: 10px;
+  background-color: rgba(255,255,255,0.7);
 }
- 
 .sidebar {
   width: 27%;
-}
-
-	
+}	
 .site-title-wrap {
   text-align: left;
 }
- 
+
+/************* カスタム固定テンプレート **********************/
+ .c-contents{
+  box-shadow: 0 0 15px #ddd;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+ }
 /*タイトルを画像にする場合*/
 .site-title a {
   font-weight: bold;
@@ -327,6 +331,9 @@
 }
  
 /*最近の投稿*/
+.widget_recent_entries ul{
+  padding-left: 0.5rem;
+}
 .widget_recent_entries li {
   padding-bottom: .5rem;
   border-bottom: 1px solid #ddd;
@@ -338,7 +345,7 @@
   font-weight: 900;
   position: absolute;
   left: 5px;
-  content: '\f303';
+  content: '\f054';
   color: #000;
 }
  
@@ -356,11 +363,13 @@
 /*カレンダーウィジェット*/
 .calendar_wrap {
   padding: 1rem;
-  border: 1px solid #ddd;
+  /* position : relative; */
 }
  
 .calendar_wrap table {
   width: 100%;
+  border: 1px solid #ddd;
+  /* margin-top: 20px; */
 }
  
 .calendar_wrap tbody {
@@ -370,12 +379,22 @@
 .calendar_wrap caption {
   font-weight: bold;
   margin-bottom: 1rem;
+  /* position: absolute; */
+  top: 0;
 }
  
+.calendar_wrap th{
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
 .calendar_wrap td {
   padding: .3rem 0;
 }
- 
+
+.calendar_wrap td a{
+  font-weight: bold;
+}
 .calendar_wrap tfoot td {
   padding-top: .7rem;
 }
